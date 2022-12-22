@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: #E5BA73;
+}
+
+.main-page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;   
+}
+
+.heading-block {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 100%;    
+}
+.heading {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-family: 'Gruppo', cursive;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #2F4F4F;
+    transform: translate(-50%, -70%);
+    text-align: center;
+}
+
+.calculator-body {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 15px;
+    width: 400px;
+    background-color: #C58940;
+    border-radius: 20px;
+    border-style: outset;
+}
+
+.display {
+    height: 8rem;
+    margin: 10px 0 20px;
+    padding: 5px 10px 15px;   
+    background-color: #008000;
+    border-style: inset;
+    border-radius: 10px;
+}
+
+#calc-input {
+    height: 4rem;
+    padding: 5px;
+    color: #F0F8FF;
+    font-size: 3rem;
+    font-family: 'Gruppo', cursive;
+    overflow: auto;    
+}
+#calc-output {
+    height: 3rem;
+    padding: 5px;   
+    color: #E0FFFF;
+    font-size: 2rem;
+    font-family: 'Gruppo', cursive;
+    text-align: right;
+    overflow: auto; 
+}
+
+.d-unit::-webkit-scrollbar {
+    display: none;
+}
+.d-unit {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.buttons {
+    margin-top: 10px;
+    padding: 10px;   
+    background-color: #E5BA73;
+    border-radius: 20px;
+    border-style: inset;
+}
+
+.btn {
+    width: 24%;
+    height: 3.5rem;
+    color: #E0FFFF;
+    background-color: #C58940;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Gruppo', cursive;
+    border-radius: 30%;
+    border: none;
+    border-style: outset;
+}
+
+.btn:active {
+    border: inset;
+}
+
+#CE {
+    background-color: #FF4500;
+}
+
+@media screen and (max-width: 1200px) {
+    .heading-block, .calculator-body, .calculator, .heading {
+        margin: auto;
+        position: static;
+        display: block;
+        transform: none;
+    }
+    .heading-block, .calculator-body {
+        width: 100%;
+        align-items: center;
+    }
+    .calculator {
+        margin-top: 20px;
+        left: 50%;
+    }
+}
